@@ -1,9 +1,14 @@
 import { FC } from "react";
+import Layout from "../../Components/Layout";
 
 interface IHomepage {}
 
 const Homepage: FC<IHomepage> = ({}) => {
-  return <div></div>;
+  return (
+    <Layout>
+      <div></div>
+    </Layout>
+  );
 };
 
 export default Homepage;
