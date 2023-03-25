@@ -1,5 +1,6 @@
+import { useMediaQuery } from "@mui/material";
 import { FC } from "react";
-import useMediaQuery from "../../Hooks/useMediaQuery";
+
 import LogoIcon from "../../Icons/LogoIcon";
 import Button from "../Button";
 import HamburgerMenu from "../HamburgerMenu";
@@ -12,6 +13,7 @@ interface ILayout {
 
 const Layout: FC<ILayout> = ({ children }) => {
   const isDesktop = useMediaQuery("(min-width: 960px)");
+
   return (
     <main>
       <header className="w-full min-h-[100px] flex justify-center px-6 lg:px-20 xl:px-40">

@@ -1,8 +1,10 @@
 .hamburger {
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: space-around;
     height: 24px;
+    z-index: 10;
     cursor: pointer;
 
     &.active .line:nth-child(1) {
@@ -21,6 +23,5 @@
 .line {
     width: 30px;
     height: 2px;
-    background-color: #333;
     transition: all 0.3s ease;
 }

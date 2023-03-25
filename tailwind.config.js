@@ -11,6 +11,8 @@ module.exports = {
     extend: {
       colors: {
         backgroundButton: "#4CFDC7",
+        backgroundButtonHover: "#66c4a8",
+        black: "#18181b",
       },
       maxWidth: {
         desktop: "1600px",
