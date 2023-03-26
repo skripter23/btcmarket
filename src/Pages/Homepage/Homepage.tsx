@@ -1,4 +1,5 @@
 import { FC } from "react";
+import HomepageMainInfo from "../../Components/HomepageMainInfo";
 import Layout from "../../Components/Layout";
 
 interface IHomepage {}
@@ -6,7 +7,7 @@ interface IHomepage {}
 const Homepage: FC<IHomepage> = ({}) => {
   return (
     <Layout>
-      <div></div>
+      <HomepageMainInfo />
     </Layout>
   );
 };

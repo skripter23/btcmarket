@@ -12,6 +12,7 @@ module.exports = {
       colors: {
         backgroundButton: "#4CFDC7",
         backgroundButtonHover: "#66c4a8",
+        gray: "#27272A",
         black: "#18181b",
       },
       maxWidth: {
