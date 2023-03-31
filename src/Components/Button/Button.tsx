@@ -1,5 +1,5 @@
 import { FC } from "react";
-import styles from "../../Styles/Button/Button.module.scss";
+import styles from "@Styles/Button/Button.module.scss";
 
 interface IButton {
   text: string;

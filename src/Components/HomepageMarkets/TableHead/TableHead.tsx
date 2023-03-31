@@ -1,5 +1,5 @@
 import { FC } from "react";
-import TableStyles from "../../../Styles/Table/Table.module.scss";
+import TableStyles from "@Styles/Table/Table.module.scss";
 
 interface ITableHead {
   headers: Array<string>;

@@ -1,27 +1,27 @@
 import { FC } from "react";
-import styles from "../../Styles/HomepageMarkets/HomepageMarkets.module.scss";
+import styles from "@Styles/HomepageMarkets/HomepageMarkets.module.scss";
 import TableHead from "./TableHead/TableHead";
 import TableBody from "./TableBody/TableBody";
-import { TableBodyData } from "../../data/mockData";
-import TableStyles from "../../Styles/Table/Table.module.scss";
-import XRPIcon from "../../Assets/XRPICon.png";
-import BitcoinIсon from "../../Assets/BitcoinIcon.png";
-import EthereumIcon from "../../Assets/EthereumIcon.png";
-import TetherIcon from "../../Assets/TetherIcon.png";
-import RightArrowIcon from "../../Assets/RightArrow.png";
+import { TableBodyData, TableHeadData, MarketsData } from "../../data/mockData";
+import TableStyles from "@Styles/Table/Table.module.scss";
+import XRPIcon from "@Assets/XRPICon.png";
+import BitcoinIсon from "@Assets/BitcoinIcon.png";
+import EthereumIcon from "@Assets/EthereumIcon.png";
+import TetherIcon from "@Assets/TetherIcon.png";
+import RightArrowIcon from "@Assets/RightArrow.png";
 
 const HomepageMarketsDesktop: FC = () => {
   return (
     <section className="w-full px-6 lg:px-20 xl:px-40 pb-32">
       <div className=" mx-auto w-full max-w-tablet sm:max-w-laptop md:max-w-largeLaptop lg:max-w-desktop">
         <div className="w-full flex justify-center items-center gap-8">
-          <span className={`${styles.hover} text-[14px] text-center`}>Most Popular</span>
-          <span className={`${styles.hover} text-[14px] text-center`}>Top Movers</span>
+          <span className={`${styles.hover} text-[14px] text-center`}>{MarketsData.mostPopular}</span>
+          <span className={`${styles.hover} text-[14px] text-center`}>{MarketsData.topMovers}</span>
         </div>
         <div className="w-full pt-8">
           <table className="w-full">
             <thead>
-              <TableHead headers={["Asset", "Last Price", "24hr Change", "Market Cap"]} />
+              <TableHead headers={[TableHeadData.asset, TableHeadData.lastPrice, TableHeadData.hrChange, TableHeadData.marketCap]} />
             </thead>
             <tbody className="w-full">
               <TableBody bodyData={TableBodyData} />
@@ -41,7 +41,7 @@ const HomepageMarketsDesktop: FC = () => {
               <img src={XRPIcon} alt="Icon" width={24} height={24} />
             </div>
             <div className={`${styles.hover} flex justify-center items-center gap-3`}>
-              <span>View all markets</span>
+              <span>{MarketsData.allMarkets}</span>
               <img src={RightArrowIcon} alt="Icon" width={20} height={12} />
             </div>
           </div>

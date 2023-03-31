@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { FC, useState } from "react";
-import styles from "../../Styles/HamburgerMenu/HamburgerMenu.module.scss";
+import styles from "@Styles/HamburgerMenu/HamburgerMenu.module.scss";
 import Button from "../Button";
 import Navbar from "../Navbar";
 import HamburgerPortal from "./HamburgerPortal";

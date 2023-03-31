@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { NavBarItems } from "../../data/mockData";
-import ArrowDownIcon from "../../Icons/ArrowDownIcon";
+import ArrowDownIcon from "@Icons/ArrowDownIcon";
 
 interface INavBar {
   modal?: boolean;

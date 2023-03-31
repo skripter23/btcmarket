@@ -1,11 +1,12 @@
 import { useMediaQuery } from "@mui/material";
 import { FC } from "react";
 
-import LogoIcon from "../../Icons/LogoIcon";
+import LogoIcon from "@Icons/LogoIcon";
 import Button from "../Button";
 import HamburgerMenu from "../HamburgerMenu";
 
 import Navbar from "../Navbar";
+import { ButtonText } from "../../data/mockData";
 
 interface ILayout {
   children: React.ReactNode;
@@ -23,8 +24,8 @@ const Layout: FC<ILayout> = ({ children }) => {
             <div className="flex items-center gap-5">
               <Navbar />
               <div className="h-full flex items-center gap-2">
-                <Button text="Log in" />
-                <Button text="Sign up" background />
+                <Button text={ButtonText.layout.loginIn} />
+                <Button text={ButtonText.layout.signUp} background />
               </div>
             </div>
           ) : (

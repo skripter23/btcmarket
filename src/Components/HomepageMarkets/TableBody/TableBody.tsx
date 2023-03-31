@@ -1,8 +1,9 @@
 import { FC } from "react";
-import TableStyles from "../../../Styles/Table/Table.module.scss";
+import TableStyles from "@Styles/Table/Table.module.scss";
 import Button from "../../Button/Button";
 import ITableBodyData from "../../../Types/ITableBodyData";
-import ShareIcon from "../../../Assets/Share.png";
+import ShareIcon from "@Assets/Share.png";
+import { ButtonText } from "../../../data/mockData";
 
 interface ITableBody {
   bodyData: Array<ITableBodyData>;
@@ -38,7 +39,7 @@ const TableBody: FC<ITableBody> = ({ bodyData }) => {
             </td>
             <td className="text-[16px] text-center p-3">{item.market_cap}</td>
             <div className="p-3 flex justify-center items-center">
-              <Button text="Buy" background />
+              <Button text={ButtonText.table.buy} background />
             </div>
           </tr>
         );
