@@ -43,7 +43,7 @@ const HomepageMarketsMobile: FC = ({}) => {
               </Accordion>
             );
           })}
-          <div className={`${styles.hover} flex justify-center items-center gap-3 pt-3`}>
+          <div className={`${styles.hover} flex justify-center items-center gap-3 pt-6`}>
             <span>View all markets</span>
             <img src={RightArrowIcon} alt="Icon" width={20} height={12} />
           </div>
