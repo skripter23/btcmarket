@@ -12,7 +12,7 @@ import RightArrowIcon from "../../Assets/RightArrow.png";
 
 const HomepageMarketsDesktop: FC = () => {
   return (
-    <section className="w-full px-6 lg:px-20 xl:px-40 pb-14">
+    <section className="w-full px-6 lg:px-20 xl:px-40 pb-32">
       <div className=" mx-auto w-full max-w-tablet sm:max-w-laptop md:max-w-largeLaptop lg:max-w-desktop">
         <div className="w-full flex justify-center items-center gap-8">
           <span className={`${styles.hover} text-[14px] text-center`}>Most Popular</span>

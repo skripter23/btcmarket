@@ -2,14 +2,14 @@ import { FC } from "react";
 import HomepageMainInfo from "../../Components/HomepageMainInfo";
 import HomepageMarkets from "../../Components/HomepageMarkets";
 import Layout from "../../Components/Layout";
+import HomepageAbout from "../../Components/HomepageAbout/HomepageAbout";
 
-interface IHomepage {}
-
-const Homepage: FC<IHomepage> = ({}) => {
+const Homepage: FC = () => {
   return (
     <Layout>
       <HomepageMainInfo />
       <HomepageMarkets />
+      <HomepageAbout />
     </Layout>
   );
 };
