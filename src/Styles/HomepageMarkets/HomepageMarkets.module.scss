@@ -1,0 +1,9 @@
+.hover {
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        border-bottom: 2px solid #66c4a8;
+    }
+}

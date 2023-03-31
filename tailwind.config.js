@@ -14,6 +14,9 @@ module.exports = {
         backgroundButtonHover: "#66c4a8",
         gray: "#27272A",
         black: "#18181b",
+        backgroundGray: "#A1A1AA",
+        tableRed: "#F43F5E",
+        tableGreen: "#10B981",
       },
       maxWidth: {
         desktop: "1600px",
