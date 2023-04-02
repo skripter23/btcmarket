@@ -19,6 +19,9 @@ import AboutInfoFunding from "@Assets/AboutInfoFunding.png";
 import VipPropgramSpeed from "@Assets/VipPropgramSpeed.png";
 import VipProgramLower from "@Assets/VipProgramLower.png";
 import VipProgramUser from "@Assets/VipProgramUser.png";
+import TradingUserCreate from "@Assets/TradingUserCreate.png";
+import TradingDeposit from "@Assets/TradingDeposit.png";
+import TradingChange from "@Assets/TradingChange.png";
 import { IAboutItem } from "../Types/IAboutItem";
 import { IButtonText } from "../Types/IButtonText";
 import { ITableHeadData } from "../Types/ITableHeadData";
@@ -136,3 +139,9 @@ export const VipProgram: IVipProgram = {
     { image: VipProgramUser, description: "Dedicated Account Manager" },
   ],
 };
+
+export const TradingData: Array<IAboutItem> = [
+  { image: TradingUserCreate, title: "1. Create", description: "Sign up and verify your free account." },
+  { image: TradingDeposit, title: "2. Deposit", description: "Add AUD or crypto to your wallet using our secure methods." },
+  { image: TradingChange, title: "3. Trade", description: "You’re all set. Buy, sell and trade crypto immediately." },
+];

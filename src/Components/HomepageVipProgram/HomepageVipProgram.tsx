@@ -14,7 +14,7 @@ const HomepageVipProgram: FC = () => {
           <div className="flex flex-col md:flex-row md:gap-24">
             {(VipProgram.parts || []).map((item, i) => {
               return (
-                <div className="flex gap-1 items-center justify-center md:justify-start">
+                <div key={i} className="flex gap-1 items-center justify-center md:justify-start">
                   <img src={item.image} alt="Icon" />
                   <span>{item.description}</span>
                 </div>
