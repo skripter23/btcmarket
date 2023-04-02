@@ -13,11 +13,11 @@ interface IHomepageAboutInfoText {
 const HomepageAboutInfoText: FC<IHomepageAboutInfoText> = ({ aboutInfo, aboutInfoMain }) => {
   return (
     <div className="w-full min-h-[414px] flex flex-col gap-8">
-      <div>
+      <div className="text-center md:text-start">
         <span className="uppercase">{aboutInfoMain.title}</span>
         <h1 className="text-[48px]">{aboutInfoMain.header}</h1>
       </div>
-      <div className="grid grid-cols-[1fr_1fr] place-items-center gap-6">
+      <div className="grid grid-cols-[1fr] md:grid-cols-[1fr_1fr] place-items-center gap-6">
         <HomepageAboutInfoTextItem aboutInfo={aboutInfo} />
       </div>
     </div>

@@ -15,9 +15,9 @@ const HomepageMarketsMobile: FC = ({}) => {
           <span className={`${styles.hover} text-[14px] text-center`}>{MarketsData.topMovers}</span>
         </div>
         <div className="flex flex-col justify-center items-center pt-6">
-          {(TableBodyData || []).map((item) => {
+          {(TableBodyData || []).map((item, i) => {
             return (
-              <Accordion>
+              <Accordion key={i}>
                 <AccordionSummary expandIcon={<ExpandMoreIcon />} aria-controls="panel1a-content" id="panel1a-header">
                   <div className=" flex w-full items-center gap-3">
                     <img src={item.image as string} alt="Icon" />

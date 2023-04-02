@@ -10,10 +10,10 @@ const HomepageAboutInfoTextItem: FC<IHomepageAboutInfoTextItem> = ({ aboutInfo }
     <>
       {(aboutInfo || []).map((item, i) => {
         return (
-          <div key={i} className="w-full flex flex-col justify-center items-start gap-3">
+          <div key={i} className="w-full flex flex-col justify-center items-center md:items-start gap-1 md:gap-3">
             <img src={item.image} alt="Image" />
             <span>{item.title}</span>
-            <span>{item.description}</span>
+            <span className="text-center md:text-start">{item.description}</span>
           </div>
         );
       })}

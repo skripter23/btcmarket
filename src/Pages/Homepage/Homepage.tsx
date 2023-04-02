@@ -3,8 +3,9 @@ import HomepageMainInfo from "@Components/HomepageMainInfo";
 import HomepageMarkets from "@Components/HomepageMarkets";
 import Layout from "@Components/Layout";
 import HomepageAbout from "@Components/HomepageAbout";
-import HomepageAboutInfo from "../../Components/HomepageAboutInfo/HomepageAboutInfo";
+import HomepageAboutInfo from "@Components/HomepageAboutInfo/HomepageAboutInfo";
 import { AboutInfo, AboutInfoReverse, AboutInfoMain, AboutInfoMainReverse } from "../../data/mockData";
+import HomepageVipProgram from "../../Components/HomepageVipProgram/HomepageVipProgram";
 
 const Homepage: FC = () => {
   return (
@@ -14,6 +15,7 @@ const Homepage: FC = () => {
       <HomepageAbout />
       <HomepageAboutInfo aboutInfo={AboutInfo} aboutInfoMain={AboutInfoMain} />
       <HomepageAboutInfo reverse aboutInfo={AboutInfoReverse} aboutInfoMain={AboutInfoMainReverse} />
+      <HomepageVipProgram />
     </Layout>
   );
 };

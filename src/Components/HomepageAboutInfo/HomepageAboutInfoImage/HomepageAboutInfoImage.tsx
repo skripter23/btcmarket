@@ -8,7 +8,7 @@ interface IHomepageAboutInfoImage {
 
 const HomepageAboutInfoImage: FC<IHomepageAboutInfoImage> = ({ reverse = false }) => {
   return (
-    <div className="w-full flex justify-center items-center">
+    <div className="w-full py-12 md:py-0 flex justify-center items-center">
       <img src={reverse ? AboutInfoImageReverse : AboutInfoImage} alt="Image" className=" w-full" />
     </div>
   );

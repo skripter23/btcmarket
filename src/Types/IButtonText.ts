@@ -6,4 +6,7 @@ export interface IButtonText {
   table: {
     buy: string;
   };
+  vipProgram: {
+    more: string;
+  };
 }
