@@ -7,6 +7,9 @@ import HomepageAboutInfo from "@Components/HomepageAboutInfo/HomepageAboutInfo";
 import { AboutInfo, AboutInfoReverse, AboutInfoMain, AboutInfoMainReverse } from "../../data/mockData";
 import HomepageVipProgram from "@Components/HomepageVipProgram";
 import HomepageTrading from "@Components/HomepageTrading";
+import HomepageTradeContinue from "@Components/HomepageTradeContinue";
+import HomepageLastNews from "@Components/HomepageLastNews";
+import HomepageCreateAccount from "@Components/HomepageCreateAccount/HomepageCreateAccount";
 
 const Homepage: FC = () => {
   return (
@@ -18,6 +21,9 @@ const Homepage: FC = () => {
       <HomepageAboutInfo reverse aboutInfo={AboutInfoReverse} aboutInfoMain={AboutInfoMainReverse} />
       <HomepageVipProgram />
       <HomepageTrading />
+      <HomepageTradeContinue />
+      <HomepageLastNews />
+      <HomepageCreateAccount />
     </Layout>
   );
 };

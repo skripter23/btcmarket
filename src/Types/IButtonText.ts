@@ -9,4 +9,7 @@ export interface IButtonText {
   vipProgram: {
     more: string;
   };
+  createAccount: {
+    getStarted: string;
+  };
 }

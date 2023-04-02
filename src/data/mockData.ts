@@ -22,6 +22,14 @@ import VipProgramUser from "@Assets/VipProgramUser.png";
 import TradingUserCreate from "@Assets/TradingUserCreate.png";
 import TradingDeposit from "@Assets/TradingDeposit.png";
 import TradingChange from "@Assets/TradingChange.png";
+import AppleStore from "@Assets/AppleStore.png";
+import GooglePlay from "@Assets/GooglePlay.png";
+import NewHead from "@Assets/NewHead.png";
+import Twiiter from "@Assets/Twiiter.png";
+import Facebook from "@Assets/Facebook.png";
+import LinkedIn from "@Assets/LinkedIn.png";
+import Telegram from "@Assets/Telegram.png";
+import Instagram from "@Assets/Instagram.png";
 import { IAboutItem } from "../Types/IAboutItem";
 import { IButtonText } from "../Types/IButtonText";
 import { ITableHeadData } from "../Types/ITableHeadData";
@@ -30,6 +38,9 @@ import { IMainInfo } from "../Types/IMainInfo";
 import { IAboutHeader } from "../Types/IAboutHeader";
 import { IAboutInfo } from "../Types/IAboutInfo";
 import { IVipProgram } from "../Types/IVipProgram";
+import { ITradeContinue } from "../Types/ITradeContinue";
+import { ILastNews } from "../Types/ILastNews";
+import { IWebSites } from "../Types/IWebSites";
 
 export const NavBarItems: Array<INavBarItem> = [
   {
@@ -92,13 +103,16 @@ export const AboutHeader: IAboutHeader = {
 export const ButtonText: IButtonText = {
   layout: {
     signUp: "Sign up",
-    loginIn: "Login in",
+    loginIn: "Log in",
   },
   table: {
     buy: "Buy",
   },
   vipProgram: {
     more: "Learn more",
+  },
+  createAccount: {
+    getStarted: "Get started",
   },
 };
 
@@ -143,5 +157,51 @@ export const VipProgram: IVipProgram = {
 export const TradingData: Array<IAboutItem> = [
   { image: TradingUserCreate, title: "1. Create", description: "Sign up and verify your free account." },
   { image: TradingDeposit, title: "2. Deposit", description: "Add AUD or crypto to your wallet using our secure methods." },
-  { image: TradingChange, title: "3. Trade", description: "You’re all set. Buy, sell and trade crypto immediately." },
+  { image: TradingChange, title: "3. Trades", description: "You’re all set. Buy, sell and trade crypto immediately." },
 ];
+
+export const TradeContinue: ITradeContinue = {
+  title: "Trade on the go",
+  description:
+    "Place simple and advanced trades on the go with the BTC Markets app. You can also manage your portfolio, monitor prices, and track market movements, anywhere, anytime.",
+  download: {
+    apple: AppleStore,
+    google: GooglePlay,
+  },
+  more: "Learn more",
+};
+
+export const LastNews: ILastNews = {
+  header: "Find out the latest crypto news",
+  items: [
+    { image: NewHead, tag: "Newsletter", date: "Jan 19th 2023", header: "This Week in Crypto: 19th January 2023", more: "Read more" },
+    { image: NewHead, tag: "Newsletter", date: "Jan 12th 2023", header: "This Week in Crypto: 12th January 2023", more: "Read more" },
+    { image: NewHead, tag: "Newsletter", date: "Dec 27th 2022", header: "BTC Markets Brand Refresh", more: "Read more" },
+  ],
+  footer: "Check out more of our crypto news",
+};
+
+export const WebSites: IWebSites = {
+  twitter: {
+    image: Twiiter,
+    title: "Twitter",
+  },
+  facebook: {
+    image: Facebook,
+    title: "Facebook",
+  },
+  linkedIn: {
+    image: LinkedIn,
+    title: "LinkedIn",
+  },
+  telegram: {
+    image: Telegram,
+    title: "Telegram",
+  },
+  instagram: {
+    image: Instagram,
+    title: "Instagram",
+  },
+};
+
+export const CreateAccount: string = "Create an account and start trading with us today!";
