@@ -34,7 +34,11 @@ const Layout: FC<ILayout> = ({ children }) => {
         </div>
       </header>
       {children}
-      <footer></footer>
+      <footer className="w-full min-h-[100px] flex justify-center px-6 lg:px-20 xl:px-40">
+        <div className="w-full flex items-center justify-center max-w-tablet sm:max-w-laptop md:max-w-largeLaptop lg:max-w-desktop">
+          <LogoIcon />
+        </div>
+      </footer>
     </main>
   );
 };

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FC, useState } from "react";
+import { FC, useEffect, useState } from "react";
 import styles from "@Styles/HamburgerMenu/HamburgerMenu.module.scss";
 import Button from "../Button";
 import Navbar from "../Navbar";
@@ -9,6 +9,11 @@ interface IHamburgerMenu {}
 
 const HamburgerMenu: FC<IHamburgerMenu> = ({}) => {
   const [active, setActive] = useState<boolean>(false);
+
+  useEffect(() => {
+    document.body.style.overflow = active ? "hidden" : "visible";
+  }, [active]);
+
   return (
     <div>
       <div onClick={() => setActive((prev) => !prev)} className={`${styles.hamburger} ${active && styles.active}`}>
